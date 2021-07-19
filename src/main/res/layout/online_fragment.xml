@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.online_fragment"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/afrag_list_relayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+    <ImageView
+        android:id="@+id/bfrag_list_imgv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_online_music_list_profile_headline" />
+
+    <TextView
+        android:id="@+id/bfrag_listname_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bfrag_list_imgv"
+        android:text="主打榜单"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/load_layout"
+        android:gravity="center"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/pb_search_wait"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在努力搜索中"
+            android:textSize="10sp"
+            android:textColor="#8b8a8a"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/top_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

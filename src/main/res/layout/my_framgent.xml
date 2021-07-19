@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.my_framgent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/mymusic_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchview"
+        android:layout_above="@+id/RelativeLayout">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_overlay"
+        android:id="@+id/RelativeLayout">
+
+        <ImageView
+            android:id="@+id/nf_album_imgv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/app_logo2" />
+
+        <TextView
+            android:id="@+id/nf_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/nf_pause_imgv"
+            android:layout_toRightOf="@+id/nf_album_imgv"
+            android:text="歌名"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nf_artist_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/nf_title_tv"
+            android:layout_toLeftOf="@id/nf_pause_imgv"
+            android:layout_toRightOf="@+id/nf_album_imgv"
+            android:text="歌手"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/nf_pause_imgv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:src="@mipmap/ic_play_bar_btn_play" />
+
+        <ImageView
+            android:id="@+id/nf_next_imgv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_play_btn_next" />
+    </RelativeLayout>
+
+</RelativeLayout>
